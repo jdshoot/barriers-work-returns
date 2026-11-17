@@ -4,10 +4,12 @@ title: "Barriers, Work, and Returns: A Unified Socioeconomic Analytical Framewor
 authors:
   - family-names: Dai
     given-names: Lei
-# TODO: 在 Zenodo 完成归档后，把下面的 doi 与 url 替换为真实值
-doi: 10.5281/zenodo.XXXXXXX
-url: "https://github.com/your-username/barriers-work-returns-paper"
-date-released: 2026-11-16
+doi: 10.5281/zenodo.24311452
+url: "https://github.com/jdshoot/barriers-work-returns"
+repository-code: "https://github.com/jdshoot/barriers-work-returns"
+version: v1.0
+date-released: 2026-11-17
+license: CC-BY-4.0
 
 preferred-citation:
   type: article
@@ -16,4 +18,5 @@ preferred-citation:
     - family-names: Dai
       given-names: Lei
   year: 2026
-  doi: 10.5281/zenodo.XXXXXXX
+  doi: 10.5281/zenodo.24311452
+  url: "https://doi.org/10.5281/zenodo.24311452"

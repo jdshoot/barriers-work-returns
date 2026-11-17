@@ -1,30 +1,31 @@
-# barriers-work-returns-paper
+# barriers-work-returns
 
 《壁垒、做功与收益：一个统一的社会经济分析框架》论文仓库。
 Bilingual web edition and arXiv sources for *Barriers, Work, and Returns: A Unified Socioeconomic Analytical Framework*.
 
-- 双语对照网页 / Bilingual web edition: <https://your-username.github.io/barriers-work-returns-paper/>
+- 双语对照网页 / Bilingual web edition: <https://jdshoot.github.io/barriers-work-returns/>
 - 论文源码 / Sources: `docs/main.tex`（English, pdfLaTeX）、`docs/main_zh.tex`（中文, XeLaTeX）
+- 永久存档 / Archived release: <https://doi.org/10.5281/zenodo.24311452>
 
 ## Cite as
 
-[![DOI](https://zenodo.org/badge/placeholder.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24311452.svg)](https://doi.org/10.5281/zenodo.24311452)
 
-Dai, L. (2026). *Barriers, Work, and Returns: A Unified Socioeconomic Analytical Framework*. https://doi.org/10.5281/zenodo.XXXXXXX
-
-> DOI 为占位符：在 Zenodo 关联本仓库完成归档后，请同步替换 `CITATION.cff` 与本文件的 DOI、徽标链接和网页地址。
-> The DOI above is a placeholder; replace it (and the badge / URLs) after archival registration on Zenodo.
+Dai, L. (2026). *Barriers, Work, and Returns: A Unified Socioeconomic Analytical Framework* (v1.0). Zenodo. https://doi.org/10.5281/zenodo.24311452
 
 <details>
 <summary>BibTeX</summary>
 
 ```bibtex
 @software{dai2026barriers,
-  title  = {Barriers, Work, and Returns: A Unified Socioeconomic Analytical Framework},
-  author = {Dai, Lei},
-  year   = {2026},
-  doi    = {10.5281/zenodo.XXXXXXX},
-  url    = {https://github.com/your-username/barriers-work-returns-paper}
+  title   = {Barriers, Work, and Returns: A Unified Socioeconomic Analytical Framework},
+  author  = {Dai, Lei},
+  year    = {2026},
+  version = {v1.0},
+  publisher = {Zenodo},
+  doi     = {10.5281/zenodo.24311452},
+  url     = {https://github.com/jdshoot/barriers-work-returns},
+  license = {CC-BY-4.0}
 }
 ```
 
@@ -47,3 +48,7 @@ web/
     ├── main.tex        # 英文 arXiv 源码（pdfLaTeX）
     └── main_zh.tex     # 中文源码（XeLaTeX）
 ```
+
+## 许可 / License
+
+CC-BY-4.0
