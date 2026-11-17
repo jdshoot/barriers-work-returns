@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Barriers, Work, and Returns: A Unified Socioeconomic Analytical Framework"
+authors:
+  - family-names: Dai
+    given-names: Lei
+# TODO: 在 Zenodo 完成归档后，把下面的 doi 与 url 替换为真实值
+doi: 10.5281/zenodo.XXXXXXX
+url: "https://github.com/your-username/barriers-work-returns-paper"
+date-released: 2026-11-16
+
+preferred-citation:
+  type: article
+  title: "Barriers, Work, and Returns: A Unified Socioeconomic Analytical Framework"
+  authors:
+    - family-names: Dai
+      given-names: Lei
+  year: 2026
+  doi: 10.5281/zenodo.XXXXXXX

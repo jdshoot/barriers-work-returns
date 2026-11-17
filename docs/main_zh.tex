@@ -1,0 +1,194 @@
+% !TEX program = xelatex
+% arXiv 投稿源码（中文稿），建议用 XeLaTeX 编译
+\documentclass[11pt]{ctexart}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\newcommand{\infmark}{\textcolor{orange}{(\(\dagger\))}}
+
+\title{壁垒、做功与收益：\\一个统一的社会经济分析框架}
+\author{戴磊}
+\date{2026年10月}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+本文从一个根本问题出发——人类交易市场是如何产生的——构建了一个统一的社会经济分析框架。我们将交易视为社会从多样性向同一性转变的状态流动，将壁垒定义为逆均一化趋势而维持势差的存在结构，并证明（论证）壁垒持有者的收益是对其维持成本的补偿。框架的主要构件包括：（1）壁垒的三维描述（作用域广度、主体嵌入度、收费时间结构）与沿嵌入度轴的七级攻防退守序列；（2）“做功—结晶”统一理论，将个人能力与结构性权力归为同一做功流在两类容器中的相态，给出收益的四变量函数表示；（3）边界层命题：均一化渐近而非到达，差异下界由决策权不可均分与物理约束给出，自动化是做功体外化的内生长河。基于框架，我们推导出六条选择策略，并用十六组文献证据与历史案例（手工织布工、ATM 柜员、放射科、护士与名医、r>g 等）进行检验；暂无直接证据、依赖推理的命题在文中以\infmark{}诚实标注。本文的贡献在于以单一坐标轴（主体嵌入度）统一了分工、交易费用与租金三条经济学传统，并为 AI 时代的个人与组织决策提供可证伪的结构化预测。
+
+\noindent\textbf{关键词：}交易费用；壁垒租金；做功与结晶；自动化；AI 时代的劳动市场
+\end{abstract}
+
+\section{引言}
+\subsection{问题的起点}
+人类之间的交易市场是如何产生的？标准回答诉诸分工与自利：个体生产不同商品，通过交换获利。本文采取更根本的视角：交易可视为人类社会从多样性向同一性转变的状态流动；交易方式是基础设施，交易费用是在特定基础设施上进行状态流动的成本，即抹平差异性的补偿。历史上，充当主要流动成本的壁垒不断轮动：农耕时代是运输壁垒，技术进步后转为信息壁垒，软件时代转为生产壁垒。随着生成式人工智能将“生成”的成本推向零，生产壁垒正在崩塌——下一个最贵的是什么？
+
+沿此追问到底，得到三个根本问题：（1）差异性与同一性的张力如何驱动社会变化？（2）个体在该过程中的收益由什么决定？（3）个体应如何做选择？本文依次给出框架（第3节）、选择理论（第4节）与证据检验（第5节）。
+
+\subsection{与经济学传统的关系}
+框架不自觉地统一了三条传统：斯密的分工理论（差异的空间分布）、科斯的交易费用理论（壁垒决定市场边界）、李嘉图的租金理论（稀缺壁垒产生租）。其后熊彼特的创新租金、波兰尼的默会知识、布迪厄的资本形态转换、诺思的制度理论，分别构成本框架的动力层、结构层、统一层与制度边界的重要输入。
+
+\subsection{方法论说明}
+本文是一次系统化的理论构建尝试：从观察出发提出统一假设，通过与历史及当代案例的持续对话收敛框架，再推导策略并接受反例的压力测试。全部经验断言均尽量给出文献或数据出处；无法找到直接证据的命题以\infmark{}标注，并在第6节集中说明其性质。
+
+\section{概念定义}
+\begin{description}[leftmargin=2.2em]
+\item[势差] 世界在物、信息、能力、信任等维度上的差异分布。势差驱动流（交易、学习、模仿），是本文所称社会变化的原动力。
+\item[壁垒] 逆均一化流向而维持势差的存在结构。壁垒持有者付出维持成本，其收益即对该成本的补偿（租金）。
+\item[做功] 劳动、注意力与能量的持续投入，是一切壁垒的“货币”。
+\item[结晶] 流动的做功经登记系统（产权、文凭、品牌、平台权重等）转化为可储存、可转移、可继承的存量。
+\item[容器] 结晶的登记处所。容器可以是个人身体、组织或制度位置；容器所有权决定存量的安全与可继承性。
+\item[折旧] 存量因遗忘、制度变迁与网络迁移而衰减的过程；维护型做功用于对冲折旧。
+\end{description}
+
+\section{框架}
+\subsection{本体层：势差与原动力}
+世界存在势差，势差驱动流。均一化是社会变化的原动力，但不导致单调收敛：壁垒逆着流维持势差，于是壁垒两侧存在持续压强，社会在壁垒处付出两种成本——跨越成本（交易费用）与维持成本。壁垒持有者的收益即维持成本的补偿。
+
+\subsection{结构层：壁垒三维与攻防序列}
+壁垒的完整描述为三个维度之积：作用域广度 $\times$ 主体嵌入度 $\times$ 收费时间结构。攻防退守沿嵌入度轴构成连续序列：
+\[
+\text{物} \to \text{信息} \to \text{知识} \to \text{信任} \to \text{解释权} \to \text{治理权} \to \text{决策权}
+\]
+相邻层级的区别归约于一条主轴：壁垒嵌入主体的深度（离体性递减），其侧面包括可复制性递减、可验证性递减、共识需求递增、替换成本递增、“躺着收租”能力递减。均一化对关系性壁垒的战术是先对象化（信任$\to$评分、法律$\to$代码）、后均一化，退守因此持续向元层推进。
+
+\subsection{动力层：成本、竞争与基础设施}
+租金最大化的壁垒形态是受控渗漏：完全不可逾越则流消失，完全可逾越则势差消失，租金最大化的校准点在中途。基础设施是“收费 $+$ 拆壁服务”的复合体；同类壁垒之间的竞争由净壁垒成本决定——胜者收取的租金与其拆除其他壁垒的服务价值之差，须小于网络自建替代方案的成本\infmark。作用域不完全重叠时，旧壁垒在残余维度续命（现金在电子支付时代的匿名场景）。制度壁垒的替换通道是政治性的，时滞可达百年——框架在制度层有方向预测力、无时间预测力。
+
+\subsection{统一层：做功—结晶理论}
+两大类壁垒（个人能力与结构性权力）统一于做功的相态：气态（随做随在，受24小时约束）、液态（灰色带：组织文化、深度关系）、固态（可储存、可转移、可继承）。结晶由登记系统完成；结晶的关键参数是容器所有权——强权力的结晶位于自有登记系统，弱权力（如平台网红）的结晶位于租来的容器，可被瞬间没收。固态免除在场要求，但不免除做功要求：做功由产生型转为维护型，折旧来自遗忘、制度变迁与网络迁移三个方向。
+
+总公式\infmark：
+\[
+\text{收益} = f\big(\ \underbrace{\text{历史做功总量} \times \text{结晶效率} \times \text{容器所有权}}_{\text{存量的形成}},\ \underbrace{\text{当前维护做功} \div \text{存量折旧率}}_{\text{存量的存续}}\ \big)
+\]
+等价读法：收益 $\approx$ 被系统依赖的程度 $\times$ 依赖被解除的速度 $\times$ 定价权 $-$ 维护成本。四变量覆盖两大类的全部属性差异：第一类（个人能力）的容器为身体，容量小、折旧快、不可转让，收益线性于24小时；第二类（结构性权力）的容器为结构，维护成本可外部化给系统，是唯一可无限超出个人服务限度的收益形态。
+
+\subsection{边界层：涟漪、下界与自动化}
+涟漪 $=$ 梯度 $\times$ 搜索。梯度（燃料）全部来自地球—太阳物理层；搜索（点火）由大脑、科学共同体与研发组织等物质化的信息系统实现，意识是搜索器而非原动力。均匀系统中涟漪是内生的：均一化攻势把系统推离平衡，微小涨落被自发放大为新壁垒（对称性自发破缺机制）——抹平与创造是同一过程的两个相位\infmark。
+
+差异下界大于零：均一化渐近而非到达。下界的严格形式是决策权不可均分（一个决定不能由所有人同时做出）\cite{arrow1951,radner1993}，加上物理约束（具身性、能量梯度）。下界不是废墟，是每代人最后站的位置。
+
+自动化是做功的体外结晶（内生倾向）：记忆$\to$文字$\to$数据库，计算$\to$计算机，生成$\to$模型。每次体外化，该能力价格归零，人的位置沿嵌入度轴退守一层。每个自动化浪潮的执行者，系统性地是下一个浪潮的被自动化者（铁匠$\to$机械师$\to$程序员）——两百年间零反例\infmark。AI 时代的特殊性仅为参数变化：折旧速度上了一个数量级，体外化首次触及“生成”；但生成从不是壁垒下界，只是可形式化边界的最新推进位置。
+
+\section{选择理论}
+\subsection{选择的自由度}
+选择只在两个自由度上有效：位置（壁垒的三维坐标）与搜索（对新涟漪的下注率）。选择决定收益的结构与暴露方式，不决定总量的水位。嵌入度与绑定是同一变量的两个读数：任何持久高收益的位置都在事实上以自由支付——壁垒处的高收益，本质是社会为“愿意被绑在那里持续做功”支付的补偿。
+
+\subsection{六条核心策略}
+\begin{enumerate}[leftmargin=2em]
+\item 卡位“压强大$\times$攻速慢”的层：往“学不会、仿不像、抢不走”的层迁移（信任、判断、具身、默会知识、责任签字）。
+\item 顺流优先于阻流：做让别人的流动更便宜的东西，在通道上收费；不做堵路设卡的东西。
+\item 对象化检验：若壁垒核心可被数据库、评分或提示词完整描述，则其租金已在衰减。
+\item 时间结构关卡化：把一次性的收入改建为每次流动抽成的关卡。
+\item 搜索策略“宁可早错，不可晚对”：先发涨落拿走正反馈与路径依赖，期望取决于谁先被放大；下注形态为小成本、高频次、广覆盖。
+\item 嵌入度组合管理：可均一账户（换流动性）与不可均一账户（持有持久壁垒）按生命周期配置。
+\end{enumerate}
+
+\subsection{四变量操作化}
+职业三问：做功结晶在谁名下；工资中流量与存量的比例（三年后离开能带走什么）；技能折旧档位与可生成性。雇主与平台审查：结晶条款（署名权、客户归属、竞业边界）；容器所有权（多平台分发 $=$ 多开存折）。资产配置四原则：流量收入持续兑换固态存量；容器分散；折旧率匹配年龄；永远保留气态能力。AI 时代日常策略的极简化版本：生成交给机器，判断留给自己，责任签自己名。
+
+\subsection{跨时代有效性}
+六条策略在农业、体力、计算、信息四轮自动化浪潮中结构一致；错误策略亦一致（在配置层加深到被淘汰、存折开在雇主容器、以壁垒阻挡趋势）。1769 年阿克赖特（生产交给机器、判断与责任留给自己、自建容器）是该策略结构最早的完整实现；卢德运动与行会路径两百年间零成功案例。
+
+\section{经验证据与案例检验}
+表\ref{tab:evidence}汇总各命题的代表性证据（完整对照见在线附录）。关键数据点：手工织布工周薪 1806 年 240 便士、1820 年跌至 99 便士并低于工厂工 25\% 以上（Acemoglu, 2024, w32416）；ATM 使每网点柜员由约 20 人降至 13 人但总就业不降（Bessen, 2015）；美国放射科医生 2014--2023 增长 17.3\%；22--25 岁 AI 暴露职业就业差距 19\%（Canaries, 2026）；美国农业就业占比 1900 年约 40\%、2000 年约 2\%。
+
+\begin{table}[h]
+\centering\small
+\caption{命题—证据对照（摘编）}
+\label{tab:evidence}
+\begin{tabular}{p{0.42\textwidth}p{0.48\textwidth}}
+\toprule
+命题 & 代表证据（强度）\\
+\midrule
+交易与分工是差异的交换与抹平 & Smith (1776); Coase (1937, 1960); Ricardo (1817)（经典）\\
+运输壁垒解除与壁垒轮动 & Levinson (2006)（数据）\\
+可编码知识贬值、默会知识受保护 & Polanyi (1958, 1966); Canaries (2026)（经典/实证）\\
+高租金催生攻击（逆流涟漪） & Allen；Jevons (1865)（实证/经典）\\
+壁垒成本降、总流量暴涨 & Bessen (2015)；放射科就业数据（实证/数据）\\
+制度壁垒的政治时滞 & North \& Weingast (1989)（实证，有争议）\\
+资本是关系而非物 & Bourdieu (1986)；马克思（经典）\\
+决策权不可均分 & Arrow (1951); Radner (1993)（经典）\\
+路径依赖与破缺点 & David (1985); Arthur (1989)（实证，有争议）\\
+责任与判断穿越浪潮 & Hinton 2016 与 HBR 2026 复盘；SOX (2002)（报道/制度）\\
+网络效应反放大；AI 只扫第一类 & Katz \& Shapiro (1985); Canaries (2026)（经典/数据）\\
+崩塌单位是壁垒成分 & Autor et al.\ (2003); Acemoglu \& Restrepo (2018, 2022)（实证）\\
+买方垄断截留租金 & Manning (2003)（经典）\\
+$r>g$ & Piketty (2014); Piketty \& Zucman (2014)（实证）\\
+跨时代策略不变 & USDA 农业就业数据；Brynjolfsson et al.\ (2025)（数据/实证）\\
+热力学类比 & Prigogine (1977); Georgescu-Roegen (1971); Hawking (1974)（经典）\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+反例消化是框架升级的主要机制。护士/教师案例暴露公式缺失“定价权”因子（阀门归属）；资本躺赢案例暴露“维护做功可外部化”的隐含假设；两例均在公式内得到消化，修正后公式为：长期收益 $\approx$ 社会依赖 $\times$ 时间 $\times$ 阀门 $-$ 账单。
+
+\section{适用边界与诚实标注}
+框架的已知边界：（1）破缺点不可预测——自发破缺选哪个涨落近乎抽签，公式描述破缺后的租金存续；（2）制度层时间预测失效——时滞由政治决定；（3）租赁容器的折旧包含容器主人意志变量，不可单独建模。
+
+以下命题暂无直接实证，属框架的内部推论或合成创新\infmark：登记系统竞争的净壁垒成本判据；登记系统 $=$ 做功结晶器的统一理论与四变量总公式；维护做功$\div$折旧率的量化关系；自动化浪潮“执行者$\to$被自动化者”的递归规律；“AI 时代剩余壁垒 $=$ 验证$+$责任$+$具身$+$信任”的预测；涟漪“抹平与创造同一相位”的强表述。上述命题构成框架的可证伪前沿。
+
+\section{可检验断言}
+为检验框架的预测能力，我们将框架的核心外推命题转化为六条可证伪断言。断言写作遵循预测平台的公开规范（Metaculus 问题写作指南的判据—截止日—边界情形三要素\footnote{\url{https://metaculus-metaculus.mintlify.app/guides/question-types}}；Astral Codex Ten 年度预测大赛的“带置信度断言＋次年复盘”模式\footnote{\url{https://www.astralcodexten.com/p/2023-prediction-contest}；复盘示例见 \url{https://www.astralcodexten.com/p/grading-my-2018-predictions-for-2023}}）。每条断言绑定一个发布周期明确的第三方数据源，截止日按数据可得性倒推；建议以 Brier 分数逐年校准，若校准曲线系统性偏离，应回头修正框架而非修正断言。
+
+\begin{description}[leftmargin=2.2em,style=nextline]
+\item[断言 1（编码知识青年就业差距扩大，置信度 60\%）]
+AI 暴露度最高职业组的 22–25 岁青年就业“keeping-pace 缺口”将从 2026 年 6 月数据期的 19\% 扩大至 25\% 以上。判赢：Canaries 研究更新版（或同口径 ADP 数据复现）报告缺口 $\geq 25\%$。判输：缺口回落至 19\% 以下，或连续两年持平，或默会知识职业组出现同幅度缺口。截止日 2028-06-30（Canaries 每年 8 月修订，该时点覆盖 2027.8 与 2028 年两版更新）。数据源：Stanford Digital Economy Lab, \textit{Canaries in the Coal Mine}。
+\item[断言 2（壁垒成分变“贵”：放射科模式再现，置信度 70\%）]
+AI 渗入职业的可编码子任务后，该职业总需求与价格不降反升：美国放射科医生（SOC 29-1224）的 OEWS 就业数或年薪中位数，至少一项增幅高于“医师总体”。判赢：两项指标中至少一项的增幅不低于医师总体。判输：两项均低于医师总体，或放射科就业绝对数下降。截止日 2028-06-30（OEWS 为年度数据、5 月参照期、发布滞后约 12 个月，该时点纳入 2027 年 5 月参照期新数据）。数据源：BLS OEWS。
+\item[断言 3（AI 只扫第一类壁垒，置信度 60\%）]
+具身/服务类岗位（护理、维修、个人护理）平均时薪涨幅不低于全行业平均，且不出现可归因于 AI 的大规模替代。判赢：CES 月度行业时薪序列中 health care \& social assistance 累计涨幅 $\geq$ private nonfarm 总体。判输：涨幅持续低于总体 2 个百分点以上，或护理/维修类就业明显萎缩。截止日 2027-12-31（CES 月度发布、滞后约 1 个月，一年窗口足以判断方向）。数据源：BLS CES。
+\item[断言 4（中间塌陷加深，置信度 65\%）]
+美国工资分布的 90/50 分位比继续上升，且中等技能常规岗位占比继续下降。判赢：CPS ASEC 或 OEWS 分位数数据显示 90/50 比连续两期上升。判输：连续两期下降，或中等技能岗位占比回升。截止日 2028-06-30（“连续两期”需 ASEC 2026 数据——2027 年 9 月发布——与 OEWS 2027 年 5 月参照期——2028 年 5 月发布——两个年度观测点）。数据源：Census CPS ASEC；BLS OEWS。
+\item[断言 5（递归规律的下一轮对象现身，置信度 50\%）]
+当前因 AI 兴起的高薪配置层岗位（提示词工程、AI 内容投放、初级 AI 运营）将被工具内置能力吸收：主流招聘平台上该类岗位发布量较 2025–2026 峰值下降 50\% 以上。判赢：Indeed Hiring Lab 职位发布指数（或 LinkedIn 同口径数据）显示降幅 $\geq 50\%$。判输：发布量不降反升，或该类岗位升级为更高级角色且总量创新高。截止日 2028-06-30（“工具内置吸收”约需两个产品周期）。本断言检验的是 \infmark{} 级推理命题，数据基础最弱，置信度相应最低。数据源：Indeed Hiring Lab。
+\item[断言 6（容器所有权的政治回应，置信度 50\%）]
+至少一个主要经济体（美/欧/中）生效一部针对 AI 平台或大型平台的新法规，要求创作者数据可携带、算法权重可审计、或模型产出可溯源（三者其一）。判赢：有公开可查的生效成文法（EUR-Lex 或各国官方法律数据库可复核）。判输：无任何此类立法生效。截止日 2028-06-30（立法周期以年计；本断言只赌方向、不赌时滞，两年窗口对应框架允许的最大政治时滞下限）。判赢口径刻意排除已被 GDPR/DMA 满足的可携带性条款，只计 AI 平台方向的新规。
+\end{description}
+
+\section{结论}
+市场交易是势差的流动，壁垒是逆流的结晶，租金是维持结晶的补偿，做功是一切壁垒的货币，登记系统是交换所，折旧是熵，自动化是体外化的长河。个人命运的四个变量：历史做功总量、结晶效率、容器所有权、维护做功与折旧率之比。对“超出个人限度的收益是否终将被消灭”这一最初问题，修正后的回答是：凡不依附于持续个人投入的收益都会被消灭，凡依附的，本身就已是个人服务。
+
+\begin{thebibliography}{99}\small
+\bibitem{smith1776} Smith, A. (1776). \textit{An Inquiry into the Nature and Causes of the Wealth of Nations}.
+\bibitem{coase1937} Coase, R. H. (1937). The Nature of the Firm. \textit{Economica}, 4(16), 386--405.
+\bibitem{coase1960} Coase, R. H. (1960). The Problem of Social Cost. \textit{Journal of Law and Economics}, 3, 1--44.
+\bibitem{ricardo1817} Ricardo, D. (1817). \textit{On the Principles of Political Economy and Taxation}.
+\bibitem{schumpeter1942} Schumpeter, J. A. (1942). \textit{Capitalism, Socialism and Democracy}.
+\bibitem{polanyi1958} Polanyi, M. (1958). \textit{Personal Knowledge}. University of Chicago Press.
+\bibitem{polanyi1966} Polanyi, M. (1966). \textit{The Tacit Dimension}. Doubleday.
+\bibitem{arrow1951} Arrow, K. J. (1951). \textit{Social Choice and Individual Values}. Wiley.
+\bibitem{radner1993} Radner, R. (1993). The Organization of Decentralized Information Processing. \textit{Econometrica}, 61(5), 1109--1146.
+\bibitem{marschak1972} Marschak, J., \& Radner, R. (1972). \textit{Economic Theory of Teams}. Yale University Press.
+\bibitem{almt2003} Autor, D. H., Levy, F., \& Murnane, R. J. (2003). The Skill Content of Recent Technological Change. \textit{Quarterly Journal of Economics}, 118(4), 1279--1333.
+\bibitem{autor2015} Autor, D. H. (2015). Why Are There Still So Many Jobs? \textit{Journal of Economic Perspectives}, 29(3), 3--30.
+\bibitem{ar2018} Acemoglu, D., \& Restrepo, P. (2018). The Race between Man and Machine. \textit{American Economic Review}, 108(6), 1488--1542.
+\bibitem{ar2022} Acemoglu, D., \& Restrepo, P. (2022). Tasks, Automation, and the Rise in US Wage Inequality. \textit{Econometrica}, 90(5), 1973--2016.
+\bibitem{acemoglu2024} Acemoglu, D. (2024). The Simple Macroeconomics of AI. NBER Working Paper No. 32416.
+\bibitem{allen} Allen, R. C. The Hand-Loom Weaver and the Power Loom. Working paper.
+\bibitem{bessen2015} Bessen, J. (2015). \textit{Learning by Doing: The Real Connection between Innovation, Wages, and Wealth}. Yale University Press.
+\bibitem{levinson2006} Levinson, M. (2006). \textit{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger}. Princeton University Press.
+\bibitem{hinton2016} Hinton, G. (2016). 公开讲话：“People should stop training radiologists now.”；复盘见 HBR (2026).
+\bibitem{sox2002} Sarbanes--Oxley Act (2002). \S 302/906.
+\bibitem{canaries2026} Brynjolfsson, E., Chandar, B., \& Chen, L. (2026). Canaries in the Coal Mine? Stanford Digital Economy Lab（2026年8月修订版）.
+\bibitem{nw1989} North, D. C., \& Weingast, B. R. (1989). Constitutions and Commitment. \textit{Journal of Economic History}, 49(4), 803--832.
+\bibitem{bourdieu1986} Bourdieu, P. (1986). The Forms of Capital. In \textit{Handbook of Theory and Research for the Sociology of Education}.
+\bibitem{manning2003} Manning, A. (2003). \textit{Monopsony in Motion}. Cambridge University Press.
+\bibitem{piketty2014} Piketty, T. (2014). \textit{Capital in the Twenty-First Century}. Harvard University Press.
+\bibitem{pz2014} Piketty, T., \& Zucman, G. (2014). Capital is Back. \textit{Quarterly Journal of Economics}, 129(3), 1255--1310.
+\bibitem{david1985} David, P. A. (1985). Clio and the Economics of QWERTY. \textit{AER P\&P}, 75(2), 332--337.
+\bibitem{arthur1989} Arthur, W. B. (1989). Competing Technologies, Increasing Returns, and Lock-In by Historical Events. \textit{Economic Journal}, 99, 116--131.
+\bibitem{ks1985} Katz, M. L., \& Shapiro, C. (1985). Network Externalities, Competition, and Compatibility. \textit{American Economic Review}, 75(3), 424--440.
+\bibitem{blr2025} Brynjolfsson, E., Li, D., \& Raymond, L. (2025). Generative AI at Work. \textit{Quarterly Journal of Economics}, 140(2), 889--942.
+\bibitem{jevons1865} Jevons, W. S. (1865). \textit{The Coal Question}.
+\bibitem{prigogine1977} Prigogine, I. (1977). Nobel Prize Lecture（耗散结构）.
+\bibitem{georgescu1971} Georgescu-Roegen, N. (1971). \textit{The Entropy Law and the Economic Process}. Harvard University Press.
+\bibitem{hawking1974} Hawking, S. W. (1974). Black Hole Explosions? \textit{Nature}, 248, 30--31.
+\bibitem{ar2012} Acemoglu, D., \& Robinson, J. A. (2012). \textit{Why Nations Fail}. Crown.
+\end{thebibliography}
+
+\end{document}
